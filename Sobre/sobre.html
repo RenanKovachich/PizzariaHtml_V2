@@ -1,0 +1,328 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Pizzaria Unip Donimos Contato</title>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+            *{
+                margin: 0 auto;
+                padding: 0px;
+                font-family: poppins;
+                box-sizing: border-box;
+            }
+            ul{
+                list-style: none;
+            }
+            a{
+                text-decoration: none;
+                transition: 0.3s;
+            }
+
+            a:hover{
+                opacity: 0.7;
+            }
+            p{
+                display: flex;
+                justify-items: center;
+                justify-content: center;
+            }
+            body{
+                margin: 0px;
+                padding: 0px;
+                font-family: poppins;
+                background-color: rgba(255, 255, 255, 0.15);
+                font-weight: 400;
+                background: linear-gradient(45deg, #1CACF4, #ffffff, #8CCCF4, #A4CCF4);
+                background-size: 300% 300%;
+                animation: colors 12s ease infinite reverse;
+                filter: blur(0.4px);
+            }
+            @keyframes colors{
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+            #pizzaria{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+                border-top: 0px solid rgba(0, 0, 0, 0.05);
+                border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            }
+            .pizzaria-heading{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+            }
+            .pizzaria-heading span{
+                color: #f33c3c;
+            }
+            .pizzaria-heading h3{
+                border-right: 2px solid rgba(0, 0, 0, 0.75);
+                font-size: 3em;
+                color: #2b2b2b;
+                font-weight: 600;
+                white-space: nowrap;
+                overflow: hidden;
+                text-align: center;
+            }
+            .typing-animation{
+                animation: blinkCursor 500ms steps(40) infinite normal,
+                 typing 4s steps(40) 1s normal both;
+            }
+
+            @keyframes typing{
+                from{
+                    width: 0;
+                }
+                to{
+                    width: 12em;
+                }
+            }
+
+            @keyframes blinkCursor {
+                from{
+                    border-right-color: rgba(0, 0, 0, 0.75)
+                }
+                to{
+                    border-right-color: transparent;
+                }
+            }
+            .pizzaria-container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 20px 0px;
+                flex-wrap: wrap;
+            }
+            .pizzaria-container h2{
+                display: block;
+                align-items: center;
+            }
+
+            .pizzaria-box{
+                width:350px;
+                background-color: #ffffff;
+                border: 1px solid #ececec;
+                margin: 20px 20px;
+
+            }
+            .pizzaria-img{
+                width:100%;
+                height: auto;
+            }
+            .pizzaria-img img{
+                width:100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+            .pizzaria-text{
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+            }
+            .pizzaria-text span{
+                color: #f33c3c;
+                font-size: 0.9rem;
+            }
+            .pizzaria-text .pizzaria-title{
+                font-size: 1.3rem;
+                font-weight: 500;
+                color: #272727;
+            }
+            .pizzaria-text p{
+                color: #9b9b9b;
+                font-size: 0.9rem;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin: 20px 0px;
+            }
+            .pizzaria-text a{
+                color: #0f0f0f;
+            }
+            .pizzaria-text a:hover{
+                color: #c74242;
+                transition: all ease 0.3s;
+            }
+
+
+            @media(max-width:1250px){
+
+                .pizzaria-box{
+                    width: 300px;
+                }
+            } 
+            @media(max-width:1100px){
+                .pizzaria-box{
+                    width:70%;
+                }
+            }
+
+            @media(max-width:550px){
+            
+                .pizzaria-box{
+                    margin: 20px 10px;
+                    width: 100%;
+                }
+                #pizzaria{
+                    padding:20px;
+                }
+            }
+            .footer{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                bottom: -60px;
+                width: 100%;
+                height: 60px;
+                line-height: 60px;
+                background-color: #D1D1D1;
+            }
+            #menu-h{
+                background-color: #D1D1D1;
+            }
+
+            #menu-h ul {
+                max-width: 800px;
+                list-style: none;
+                padding: 0;
+            }
+
+            #menu-h ul li {
+                display: inline;
+            }
+
+            #menu-h ul li a {
+                color: #0f0f0f;
+                padding: 20px;
+                display: inline-block;
+                text-decoration: none;
+                transition: background .4s;
+            }
+
+            #menu-h ul li a:hover {
+                background-color: #1CACF4;
+                color: #c74242;
+                transition: all ease 0.3s;
+            }
+
+            #menu-h ul li:last-child a {
+                float: right;
+                background-color: rgb(24, 139, 233);
+            }
+            .back-menu{
+                right: 10px;
+                bottom: 10px;
+                color: #0f0f0f;
+                text-decoration: none;
+                border: 1px solid #0f0f0f;
+                margin-left: 35px;
+                padding: 0.1%;
+            }
+            .back-menu:hover{
+                color: #c74242;
+                transition: all ease-in-out 0.3s;
+                border: 2.1px solid #0f0f0f;
+            }
+            .back-menu{
+                right: 10px;
+                bottom: 10px;
+                color: #0f0f0f;
+                text-decoration: none;
+                border: 1px solid #0f0f0f;
+                margin-left: 35px;
+                padding: 0.1%;
+            }
+            .back-menu:hover{
+                color: #c74242;
+                transition: all ease-in-out 0.3s;
+                border: 2.1px solid #0f0f0f;
+            }
+		</style>
+	</head>
+	
+	<body>
+<!--            <br>
+            <header class="back">
+                <a href="../sabores/sabores.html" class="back-menu">Back</a>
+             </header> -->
+
+             <nav id="menu-h">
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="../sabores/sabores.html">Sabores</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="../Contato/contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+		<section id="pizzaria">
+			<div class="pizzaria-heading">
+				<span>A Melhor do Brasil </span>
+				<h3 class="line typing-animation">Pizzaria Unip Donimos</h3>
+			</div>
+			
+			<div class="pizzaria-container">
+<!--box1--
+				<div class="pizzaria-box">
+
+                        <div class="pizzaria-img">
+                            <img src="atendimento02.png" width="400" alt="pizzaria">
+                        </div>
+
+                        <div class="pizzaria-text">
+                            <span>WhatsApp</span>
+                            <a href="#" class="pizzaria-tittle">Contato</a>
+                            <p>(11)99999-9999</p>
+							<p>(11)90909-0909</p>
+                            <a href="sabores/sabores.html">Faça seu pedido agora</a>
+                        </div>
+                </div>
+
+				<div class="pizzaria-box">
+
+					<div class="pizzaria-img">
+						<img src="atendimento01.png" width="400" alt="pizzaria">
+					</div>
+
+					<div class="pizzaria-text">
+						<span>Email</span>
+						<a href="#" class="pizzaria-tittle">Contato</a>
+						<p>pizzariaunipdonimos@gmail.com</p>
+						<p>pizzariaatendimento@gmail.com</p>
+						<a href="sabores/sabores.html">Faça seu pedido agora</a>
+					</div>
+				</div> -->
+			
+                <h2>Sobre Nós</h2>
+                <br>
+                <p>O gostinho da Itália no seu prato</p>
+
+			</div>
+
+			<footer class="footer">
+                <address>
+                    Criação e Desenvolvimento: <a href="renankor5@gmail.com">Renan Kovachich</a>
+                    &copy; 2022 - <a href="www.unip.br">Unip</a>
+                </address>
+            </footer>
+		</section>
+	</body>
+</html>
